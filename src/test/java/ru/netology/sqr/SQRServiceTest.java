@@ -23,16 +23,16 @@ public class SQRServiceTest {
     @org.junit.jupiter.api.Test
     void CalculateSqrAll() {
         SQRService service = new SQRService();
-        int expected = 89;
-        int actual = service.calcSqrt(100, 9_801);
+        int expected = 85;
+        int actual = service.calcSqrt(50, 9_000);
         Assertions.assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
     void CalculateSqrLast() {
         SQRService service = new SQRService();
-        int expected = 0;
-        int actual = service.calcSqrt(9_802, 10_000);
+        int expected = 15;
+        int actual = service.calcSqrt(7_000, 11_000);
         Assertions.assertEquals(expected, actual);
     }
 }
